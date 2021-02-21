@@ -5,6 +5,7 @@ const {geoCode} = require('./utils/geocode')
 const {forecast} = require('./utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //Path directory
 const public = path.join(__dirname,'../public')
@@ -89,8 +90,8 @@ app.get('*',(request, response) => {
     })
 })
 
-app.listen(3100, () => {
-    console.log('Host 3100 is now live on the server')
+app.listen(port, () => {
+    console.log(port + ' is now live on the server')
 }) 
 
 
