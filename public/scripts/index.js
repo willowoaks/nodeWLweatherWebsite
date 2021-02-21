@@ -10,14 +10,14 @@ const fetchData = (location) => {
 })
 }
 
-const renderWeather = (error, {description, feelslike, temperature, location}={}) => {
+const renderWeather = (error, {description, feelslike, temperature, location, pressure}={}) => {
     const mainDiv = document.querySelector('.weatherUpdate')
     mainDiv.innerHTML=''
     const weatherDisplay = document.createElement('h4')
     if(error) {
         weatherDisplay.textContent = error
     } else {
-        weatherDisplay.textContent = `It is currently ${description} and ${temperature} degrees here in ${location}. It feels like ${feelslike} degrees`
+        weatherDisplay.textContent = `It is currently ${description} and ${temperature} degrees here in ${location}. It feels like ${feelslike} degrees with a pressure rating of ${pressure}mpH.`
     }
     mainDiv.appendChild(weatherDisplay)
 }

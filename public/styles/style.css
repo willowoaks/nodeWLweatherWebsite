@@ -36,7 +36,7 @@ header a {
     width: 250px;
 }
 
-.main {
+.weatherUpdate {
     flex-grow: 1;
 }
 
@@ -50,4 +50,4 @@ button {
 
 input {
     padding: 8px;
-}
+} 
