@@ -90,7 +90,7 @@ app.get('*',(request, response) => {
 })
 
 app.listen(3100, () => {
-    console.log('Host 3100 is now live')
+    console.log('Host 3100 is now live on the server')
 }) 
 
 
